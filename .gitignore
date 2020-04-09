@@ -1,0 +1,6 @@
+/.idea
+/node_modules/
+/js/main.js
+/.htaccess
+/wp-config.php
+/.htpasswd
