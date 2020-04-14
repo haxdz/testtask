@@ -30,7 +30,7 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group" role="banner">
+		<header id="site-header" class="header-footer-group header-top" role="banner">
 
 			<div class="header-inner section-inner">
 
@@ -79,6 +79,8 @@
 
 				</div><!-- .header-titles-wrapper -->
 
+                <div class="container">
+
 				<div class="header-navigation-wrapper">
 
 					<?php
@@ -117,6 +119,17 @@
 								</ul>
 
 							</nav><!-- .primary-menu-wrapper -->
+
+                        <!-- authorisation -->
+
+                        <div class="authorisation">
+                            <ul class="authorisation-list">
+                                <li class="authorisation-item"><a href="" class="authorisation-link">Sing in</a></li>
+                                <li class="authorisation-item"><a href="" class="authorisation-link-active">Registration</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- authorisation -->
 
 						<?php
 					}
@@ -170,6 +183,19 @@
 					?>
 
 				</div><!-- .header-navigation-wrapper -->
+
+
+
+                </div>
+
+                <div>
+                    <select>
+                        <option>English</option>
+                        <option>English</option>
+                        <option>English</option>
+                        <option>English</option>
+                    </select>
+                </div>
 
 			</div><!-- .header-inner -->
 

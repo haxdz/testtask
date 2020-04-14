@@ -51,7 +51,7 @@ function twentytwenty_theme_support() {
 	}
 
 	/*
-	 * Enable support for Post Thumbnails on posts and pages.
+	 * Enable support for Post Thumbnails on posts and components.
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
@@ -754,4 +754,20 @@ function twentytwenty_get_elements_array() {
 	* @param array Array of elements
 	*/
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
+}
+
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+
+function enqueue_parent_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+}
+
+function _themename_assets() {
+    wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css');
+    wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', '_themename_assets');
+
+if( !defined('THEME_IMG_PATH')){
+    define( 'THEME_IMG_PATH', get_stylesheet_directory_uri() . '/dist/images' );
 }

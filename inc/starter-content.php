@@ -32,7 +32,7 @@ function twentytwenty_get_starter_content() {
 			),
 		),
 
-		// Create the custom image attachments used as post thumbnails for pages.
+		// Create the custom image attachments used as post thumbnails for components.
 		'attachments' => array(
 			'image-opening' => array(
 				'post_title' => _x( 'The New UMoMA Opens its Doors', 'Theme starter content', 'twentytwenty' ),
@@ -40,7 +40,7 @@ function twentytwenty_get_starter_content() {
 			),
 		),
 
-		// Specify the core-defined pages to create and add custom thumbnails to some of them.
+		// Specify the core-defined components to create and add custom thumbnails to some of them.
 		'posts'       => array(
 			'front' => array(
 				'post_type'    => 'page',
@@ -162,7 +162,7 @@ function twentytwenty_get_starter_content() {
 			'blog',
 		),
 
-		// Default to a static front page and assign the front and posts pages.
+		// Default to a static front page and assign the front and posts components.
 		'options'     => array(
 			'show_on_front'  => 'page',
 			'page_on_front'  => '{{front}}',
