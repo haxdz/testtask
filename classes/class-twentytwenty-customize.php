@@ -264,7 +264,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'     => 'radio',
 					'section'  => 'options',
 					'priority' => 10,
-					'label'    => __( 'On archive pages, posts show:', 'twentytwenty' ),
+					'label'    => __( 'On archive components, posts show:', 'twentytwenty' ),
 					'choices'  => array(
 						'full'    => __( 'Full text', 'twentytwenty' ),
 						'summary' => __( 'Summary', 'twentytwenty' ),

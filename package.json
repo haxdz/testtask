@@ -75,5 +75,8 @@
 		"build": "gulp build --prod"
 	},
 	"main": "index.js",
-	"dependencies": {}
+	"dependencies": {
+		"jquery-ui": "github:jquery/jquery-ui#1.12.4",
+		"jquery-ui-dist": "^1.12.1"
+	}
 }

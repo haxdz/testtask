@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 21" width="27" height="21">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffd200 } 
+	</style>
+	<g id="01">
+		<g id="Headline">
+			<g id="lang">
+				<path id="Rectangle 1" class="shp0" d="M4 2L24 2C25.1 2 26 2.9 26 4L26 18C26 19.1 25.1 20 24 20L4 20C2.9 20 2 19.1 2 18L2 4C2 2.9 2.9 2 4 2Z" />
+			</g>
+		</g>
+	</g>
+</svg>

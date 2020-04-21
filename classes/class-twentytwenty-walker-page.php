@@ -10,7 +10,7 @@
 if ( ! class_exists( 'TwentyTwenty_Walker_Page' ) ) {
 	/**
 	 * CUSTOM PAGE WALKER
-	 * A custom walker for pages.
+	 * A custom walker for components.
 	 */
 	class TwentyTwenty_Walker_Page extends Walker_Page {
 

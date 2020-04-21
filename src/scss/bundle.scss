@@ -1,14 +1,13 @@
 @import '../../node_modules/slick-carousel/slick/slick.scss';
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 @import 'general/_variables';
+@import 'general/_breakpoints';
 @import 'general/_general';
 @import 'general/_fonts';
 @import 'general/_colors';
-@import 'general/_breakpoints';
 
-@import 'components/_text';
-@import 'components/_buttons';
-@import 'components/_slider';
 @import 'components/_header';
 @import 'components/_footer';
-@import 'components/_form';
+
+@import 'pages/_home';

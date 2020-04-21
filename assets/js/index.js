@@ -366,7 +366,7 @@ twentytwenty.modalMenu = {
 				elements = Array.prototype.slice.call( elements );
 
 				if ( '.menu-modal' === toggleTarget ) {
-					menuType = window.matchMedia( '(min-width: 1000px)' ).matches;
+					menuType = window.matchMedia( '(min-width: 1024px)' ).matches;
 					menuType = menuType ? '.expanded-menu' : '.mobile-menu';
 
 					elements = elements.filter( function( element ) {

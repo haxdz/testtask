@@ -19,7 +19,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<?php wp_head(); ?>
 
 	</head>
@@ -33,7 +33,13 @@
 		<header id="site-header" class="header-footer-group header-top" role="banner">
 
 			<div class="header-inner section-inner">
-
+                <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<span class="toggle-inner">
+							<span class="toggle-icon">
+								<i class="fas fa-bars"></i>
+							</span>
+						</span>
+                </button><!-- .nav-toggle -->
 				<div class="header-titles-wrapper">
 
 					<?php
@@ -48,9 +54,8 @@
 						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
 							<span class="toggle-inner">
 								<span class="toggle-icon">
-									<?php twentytwenty_the_theme_svg( 'search' ); ?>
+									<i class="fas fa-bars"></i>
 								</span>
-								<span class="toggle-text"><?php _e( 'Search', 'twentytwenty' ); ?></span>
 							</span>
 						</button><!-- .search-toggle -->
 
@@ -68,14 +73,7 @@
 
 					</div><!-- .header-titles -->
 
-					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-						<span class="toggle-inner">
-							<span class="toggle-icon">
-								<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
-							</span>
-							<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
-						</span>
-					</button><!-- .nav-toggle -->
+
 
 				</div><!-- .header-titles-wrapper -->
 
@@ -124,7 +122,7 @@
 
                         <div class="authorisation">
                             <ul class="authorisation-list">
-                                <li class="authorisation-item"><a href="" class="authorisation-link">Sing in</a></li>
+                                <li class="authorisation-item"><a href="" class="authorisation-link">Sign in</a></li>
                                 <li class="authorisation-item"><a href="" class="authorisation-link-active">Registration</a></li>
                             </ul>
                         </div>
@@ -149,7 +147,7 @@
 									<span class="toggle-inner">
 										<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
 										<span class="toggle-icon">
-											<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
+											<i class="fas fa-bars"></i>
 										</span>
 									</span>
 								</button><!-- .nav-toggle -->
@@ -184,17 +182,19 @@
 
 				</div><!-- .header-navigation-wrapper -->
 
-
-
                 </div>
 
-                <div>
+                <div class="lang-select">
+                    <div class="lang-flag__wrapper">
+                        <img src="<?php echo THEME_IMG_PATH; ?>/flag.svg" alt="flag" class="lang-flag">
+                    </div>
                     <select>
                         <option>English</option>
                         <option>English</option>
                         <option>English</option>
                         <option>English</option>
                     </select>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
 
 			</div><!-- .header-inner -->

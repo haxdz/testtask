@@ -6,6 +6,11 @@ body {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+
+    @include md {
+        max-width: 90%;
+    }
 }
 
 ul, ol {
@@ -20,4 +25,8 @@ li {
 a {
     text-decoration: none;
     transition: $time;
+}
+
+.entry-header {
+    display: none;
 }

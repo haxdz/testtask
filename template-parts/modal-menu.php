@@ -71,7 +71,15 @@
 					?>
 
 					<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile', 'twentytwenty' ); ?>" role="navigation">
-
+                        <div class="lang-select">
+                            <select>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
 						<ul class="modal-menu reset-list-style">
 
 						<?php
